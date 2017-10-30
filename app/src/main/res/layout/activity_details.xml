@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ravin.marvel.feature.DetailsActivity">
+    <include layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sliding_layout"
+        android:gravity="bottom"
+        app:umanoDragView="@+id/scrollView"
+        app:umanoParallaxOffset="100dp"
+        app:umanoShadowHeight="4dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iv_image"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollview">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+              <!-- <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tv_name"
+                   android:textColor="#000000"
+                   android:textSize="18sp"
+                   />-->
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tv_Realname"
+                   android:textColor="#696565"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="15sp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tv_team"
+                   android:textColor="#696565"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="15sp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tv_publisher"
+                   android:textColor="#696565"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="15sp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/tv_bio"
+                   android:textColor="#696565"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="15sp"
+                   />
+           </LinearLayout>
+        </ScrollView>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+
+</LinearLayout>

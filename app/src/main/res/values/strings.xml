@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Marvel</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign In</string>
+</resources>
