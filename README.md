@@ -1,5 +1,6 @@
 # Marvel
 This repository contains a simple Android application (compatible with minSDK version 15 and up) demonstrates the use of Retrofit,RecyclerView and SlidingupPanelLayout.
+
 ##### Working Functionality:
 >Splash Screen
 
@@ -13,8 +14,8 @@ This repository contains a simple Android application (compatible with minSDK ve
 
 >Alert Dialog for Internet Validation
 
-## Splash Screen
 
+## Splash Screen
 Splash Screen is implemented during the app launch. It is achieved by using an Handler Class and Overriding run() method.
 
 ``` 
@@ -37,17 +38,16 @@ new Handler().postDelayed(new Runnable() {
 ```
 ![screenshot_2017-10-30-20-55-56-312 1](https://user-images.githubusercontent.com/33225889/32188415-bd4c5c70-bdcd-11e7-818c-5b98ead2bd3d.jpg)
 
-## User Login
 
+## User Login
 Basic Login Screen with two EditTexts and one button
 
 ![screenshot_2017-10-30-20-56-10-458](https://user-images.githubusercontent.com/33225889/32188430-cc991682-bdcd-11e7-81ae-e6ffebcbff9c.jpg)
 
-## RecyclerView
 
+## RecyclerView
 RecyclerView can display large datasets that can be scrolled efficiently by recycling a limited number of views. Click listeners can be defined when ViewHolder views are instantiated. RecyclerView is available in the v7 Support Library, thus compatible with API level 7 and above.
 ### Dependencies
-
 ```
 compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:cardview-v7:25.3.1'
@@ -98,7 +98,11 @@ public interface RestApi {
     Call<List<Pojo>> getmarveldata();
 }
 ```
+            
 Implement a callback() method in the activity where the data to be fetched
+
+![1yhva3](https://user-images.githubusercontent.com/33225889/32191107-e5b9552a-bdd5-11e7-96c4-da4b9d25e55b.gif)
+
 
 ## SlidingUpPanelLayout
 SlidingupPanelLayout is a library that provides a simple way to add a draggable sliding up panel.
@@ -122,6 +126,7 @@ For smooth interaction with the ActionBar, make sure that windowActionBarOverlay
 </style>
 ```
 ![1yhvlx](https://user-images.githubusercontent.com/33225889/32188462-ec493282-bdcd-11e7-9c21-7148f7a1f9b5.gif)
+ 
  
  ## AlertDialog for logout
  A Dialog is small window that prompts the user to a decision or enter additional information.
@@ -150,8 +155,9 @@ For smooth interaction with the ActionBar, make sure that windowActionBarOverlay
         });
 ```
 ![screenshot_2017-10-30-20-56-26-153](https://user-images.githubusercontent.com/33225889/32188504-07e320ac-bdce-11e7-846c-bda98eb0e3d1.jpg)
-## AlertDialog for Internet Validation:
 
+
+## AlertDialog for Internet Validation:
 To check the internet connection class should extends the BroadcastReceiver class as shown below
 ```
 public class ConnectionReciever extends BroadcastReceiver {
@@ -167,10 +173,17 @@ Inside onReceive() method of BroadcastReceiver class create an object of Connect
         boolean isConnected = networkInfo!=null&&networkInfo.isConnectedOrConnecting();
 ```
 ![screenshot_2017-10-30-20-56-37-127](https://user-images.githubusercontent.com/33225889/32188523-16940364-bdce-11e7-8959-a3f1ab17bdbc.jpg)
+
+
 ## Other factors included like:
 -Butterknife dependencies
+
 -one time login for user
+
 -Shared preferences
+
 -options Menu
+
+
 ## Conclusion:
 Marvel is an Android Application gives the information about the super heros of Marvel studios. It is very user friendly.
