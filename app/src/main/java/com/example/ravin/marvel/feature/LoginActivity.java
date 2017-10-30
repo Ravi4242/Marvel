@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         else if(etPassword.getText().toString().isEmpty()){
             etPassword.setError("Field is mandatory");
         }
+        
     }
 
     public void validatecredentials(String email,String password){
